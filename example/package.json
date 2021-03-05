@@ -1,0 +1,34 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "react-app-polyfill": "^1.0.0"
+  },
+  "alias": {
+    "react": "../node_modules/react",
+    "react-dom": "../node_modules/react-dom/profiling",
+    "scheduler/tracing": "../node_modules/scheduler/tracing-profiling"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
+  "devDependencies": {
+    "@parcel/optimizer-htmlnano": "2.0.0-nightly.617",
+    "@parcel/packager-html": "2.0.0-nightly.617",
+    "@parcel/transformer-html": "2.0.0-nightly.617",
+    "@parcel/transformer-posthtml": "2.0.0-nightly.617",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "parcel": "^1.12.4",
+    "typescript": "^4.2.3"
+  }
+}
