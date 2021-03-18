@@ -1,5 +1,6 @@
 import React, { FC, ButtonHTMLAttributes } from 'react';
 import styled from 'styled-components';
+import '../main.css';
 
 const StyledButton = styled.button.attrs(
   ({ variant }: { variant: ButtonVariants }) => ({
