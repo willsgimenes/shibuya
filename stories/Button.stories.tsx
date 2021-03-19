@@ -21,6 +21,14 @@ export default meta;
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
-export const SCButton = Template.bind({});
+export const PrimaryButton = Template.bind({});
+PrimaryButton.args = { text: 'Button', variant: 'primary' };
 
-SCButton.args = { text: 'Button' };
+export const SecondaryButton = Template.bind({});
+SecondaryButton.args = { text: 'Button', variant: 'secondary' }
+
+export const TertitaryButton = Template.bind({});
+TertitaryButton.args = { text: 'Button', variant: 'tertiary' }
+
+export const DisabledButton = Template.bind({});
+DisabledButton.args = { text: 'Button disabled', variant: 'primary', disabled: true }
