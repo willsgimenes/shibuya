@@ -35,4 +35,12 @@ describe('Button', () => {
     expect(buttonElement.classList.contains('bg-purple-800')).toBe(false);
     expect(buttonElement.classList.contains('bg-red-800')).toBe(true);
   });
+
+  it('should have correct disabled style', () => {
+    const { getByRole } = render(<Button text="Button Disabled" disabled />);
+
+    const buttonElement = getByRole('button', { name: 'Button Disabled' });
+
+    expect(buttonElement).toBeDisabled();
+  });
 });

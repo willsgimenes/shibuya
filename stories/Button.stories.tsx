@@ -29,3 +29,6 @@ SecondaryButton.args = { text: 'Button', variant: 'secondary' }
 
 export const TertitaryButton = Template.bind({});
 TertitaryButton.args = { text: 'Button', variant: 'tertiary' }
+
+export const DisabledButton = Template.bind({});
+DisabledButton.args = { text: 'Button disabled', variant: 'primary', disabled: true }

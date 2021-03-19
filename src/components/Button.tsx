@@ -28,23 +28,29 @@ const getVariantStyle = (variant: string): string => {
 
 const BASE_STYLE = 'px-8 py-2 rounded-lg text-white';
 
+const DISABLED_STYLED = 'bg-gray-100 text-gray-500';
+
 const StyledButton = styled.button.attrs(
-  ({ variant }: { variant: ButtonVariants }) => ({
-    className: `${BASE_STYLE} ${getVariantStyle(variant)}`,
+  ({ variant, disabled }: { variant: ButtonVariants; disabled: boolean }) => ({
+    className: `${BASE_STYLE} ${
+      disabled ? DISABLED_STYLED : getVariantStyle(variant)
+    }`,
   })
 )<{ variant: ButtonVariants }>``;
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
   variant?: ButtonVariants;
+  disabled?: boolean;
 }
 
 export const Button: FC<ButtonProps> = ({
   text,
   variant = 'primary',
+  disabled = false,
   ...props
 }) => (
-  <StyledButton variant={variant} {...props}>
+  <StyledButton variant={variant} {...props} disabled={disabled}>
     {text}
   </StyledButton>
 );
