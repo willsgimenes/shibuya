@@ -2,15 +2,37 @@ import React, { FC, ButtonHTMLAttributes } from 'react';
 import styled from 'styled-components';
 import '../main.css';
 
+enum Variants {
+  Primary = 'primary',
+  Secondary = 'secondary',
+  Tertiary = 'tertiary',
+}
+
+type ButtonVariants = 'primary' | 'secondary' | 'tertiary';
+
+const getVariantStyle = (variant: string): string => {
+  switch (variant) {
+    case Variants.Primary:
+      return 'bg-purple-800 hover:bg-purple-600';
+
+    case Variants.Secondary:
+      return 'bg-red-800 hover:bg-red-600';
+
+    case Variants.Tertiary:
+      return 'bg-gray-400';
+
+    default:
+      return 'bg-purple-800 hover:bg-purple-600';
+  }
+};
+
+const BASE_STYLE = 'px-8 py-2 rounded-lg text-white';
+
 const StyledButton = styled.button.attrs(
   ({ variant }: { variant: ButtonVariants }) => ({
-    className: `px-8 py-2 font-semibold ${
-      variant === 'default' ? 'text-white' : 'text-red-700'
-    } transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-gradient-to-r from-red-300 to-blue-300 hover:from-pink-400 hover:to-indigo-400`,
+    className: `${BASE_STYLE} ${getVariantStyle(variant)}`,
   })
 )<{ variant: ButtonVariants }>``;
-
-type ButtonVariants = 'default' | 'warning';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
@@ -19,12 +41,10 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export const Button: FC<ButtonProps> = ({
   text,
-  variant = 'default',
+  variant = 'primary',
   ...props
-}) => {
-  return (
-    <StyledButton variant={variant} {...props}>
-      {text}
-    </StyledButton>
-  );
-};
+}) => (
+  <StyledButton variant={variant} {...props}>
+    {text}
+  </StyledButton>
+);

@@ -3,7 +3,7 @@ import { render, fireEvent } from '@testing-library/react';
 
 import '@testing-library/jest-dom/extend-expect';
 
-import { SCButton as Button } from '../stories/Button.stories';
+import { PrimaryButton as Button } from '../stories/Button.stories';
 
 describe('Button', () => {
   it('should render the button without crashing', () => {
@@ -27,12 +27,12 @@ describe('Button', () => {
 
     const buttonElement = getByRole('button', { name: 'test' });
 
-    expect(buttonElement.classList.contains('text-white')).toBe(true);
-    expect(buttonElement.classList.contains('text-red-700')).toBe(false);
+    expect(buttonElement.classList.contains('bg-purple-800')).toBe(true);
+    expect(buttonElement.classList.contains('bg-red-800')).toBe(false);
 
-    rerender(<Button text="test" variant="warning" />);
+    rerender(<Button text="test" variant="secondary" />);
 
-    expect(buttonElement.classList.contains('text-white')).toBe(false);
-    expect(buttonElement.classList.contains('text-red-700')).toBe(true);
+    expect(buttonElement.classList.contains('bg-purple-800')).toBe(false);
+    expect(buttonElement.classList.contains('bg-red-800')).toBe(true);
   });
 });
