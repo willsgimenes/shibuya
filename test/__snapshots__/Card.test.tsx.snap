@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Should render the card without crashing 1`] = `
+<bound Template>
+  <div>
+    渋谷区
+  </div>
+</bound Template>
+`;
