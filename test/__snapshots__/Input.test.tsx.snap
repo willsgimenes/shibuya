@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input should render input without crashing 1`] = `
+<input
+  class="sc-bdfBwQ p-2 border rounded-lg placeholder-yellow-800 false "
+  id="song"
+  placeholder="Insert text"
+  type="text"
+  value=""
+/>
+`;
