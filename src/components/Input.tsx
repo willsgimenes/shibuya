@@ -1,4 +1,4 @@
-import React, { FC, useRef, InputHTMLAttributes } from 'react';
+import React, { FC, InputHTMLAttributes } from 'react';
 import styled from 'styled-components';
 
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
@@ -22,8 +22,6 @@ export const Input: FC<InputProps> = ({
   label,
   ...props
 }) => {
-  const inputRef = innerRef || useRef(null);
-
   return (
     <fieldset>
       <label htmlFor={label}>{label}</label>
@@ -32,7 +30,7 @@ export const Input: FC<InputProps> = ({
         value={value}
         type="text"
         onChange={onChange}
-        ref={inputRef}
+        ref={innerRef}
         disabled={disabled}
         {...props}
       />
