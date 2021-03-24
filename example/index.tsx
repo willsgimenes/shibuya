@@ -1,7 +1,7 @@
 import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import {Button, Card, Input} from '../.';
+import {Button, Card, Input, Link} from '../.';
 
 const App = () => {
     const [state, setState] = React.useState('')
@@ -25,6 +25,8 @@ const App = () => {
                     onChange={(e) => setState(e.target.value)}
                     placeholder='blues'
                 />
+
+                <Link url="https://google.com" external>Google</Link>
 
             </Card>
         </div>
