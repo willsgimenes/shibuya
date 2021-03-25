@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/willsgimenes/shibuya/compare/v1.0.0...v1.0.1) (2021-03-25)
+
+
+### Bug Fixes
+
+* **prepare-script:** fix prepare-script to tree-shake tailwind ([#20](https://github.com/willsgimenes/shibuya/issues/20)) ([576653e](https://github.com/willsgimenes/shibuya/commit/576653ee52e38756c7873abb1d1df2428b10caff)), closes [#9](https://github.com/willsgimenes/shibuya/issues/9)
+
 # 1.0.0 (2021-03-25)
 
 
