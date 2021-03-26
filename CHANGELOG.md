@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/willsgimenes/shibuya/compare/v1.0.1...v1.1.0) (2021-03-26)
+
+
+### Features
+
+* **link-inverted:** adds an inverted link version ([#27](https://github.com/willsgimenes/shibuya/issues/27)) ([84a9bc8](https://github.com/willsgimenes/shibuya/commit/84a9bc8e2aec19a8155837b4084ba991be9dcde2)), closes [#21](https://github.com/willsgimenes/shibuya/issues/21)
+
 ## [1.0.1](https://github.com/willsgimenes/shibuya/compare/v1.0.0...v1.0.1) (2021-03-25)
 
 
