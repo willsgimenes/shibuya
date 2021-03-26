@@ -1,18 +1,28 @@
 import React, { FC, ReactNode } from 'react';
 import styled from 'styled-components';
 
-const StyledLink = styled.a.attrs(() => ({
-  className: `flex items-center text-gray-600 hover:text-blue-700`,
-}))``;
+type Inverted = false | true;
+
+const StyledLink = styled.a.attrs(({ inverted }: { inverted: string }) => ({
+  className: `flex items-center ${
+    inverted ? 'text-white' : 'text-gray-600 hover:text-blue-700'
+  }`,
+}))<{ inverted: Inverted }>``;
 
 export interface LinkProps {
   children: ReactNode;
   url: string;
   external: boolean;
+  inverted?: boolean;
 }
 
-export const Link: FC<LinkProps> = ({ url, external, children }) => (
-  <StyledLink href={url} target={external ? '_blank' : ''}>
+export const Link: FC<LinkProps> = ({
+  inverted = false,
+  url,
+  external,
+  children,
+}) => (
+  <StyledLink href={url} target={external ? '_blank' : ''} inverted={inverted}>
     {children}
     <svg
       className="w-5 h-5 ml-0.5"
