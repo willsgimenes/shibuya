@@ -17,4 +17,19 @@ describe('Link', () => {
     expect(linkElement).toBeInTheDocument();
     expect(linkElement).toMatchSnapshot();
   });
+
+  it('should render inverted link correct', () => {
+    const { getByRole } = render(
+      <Link external url="https://google.com" inverted>
+        Google
+      </Link>
+    );
+
+    const linkElement = getByRole('link', { name: 'Google' });
+
+    expect(linkElement).toHaveAttribute('href', 'https://google.com');
+    expect(linkElement).toBeInTheDocument();
+    expect(linkElement.classList.contains('text-white')).toBe(true);
+    expect(linkElement).toMatchSnapshot();
+  });
 });
