@@ -88,6 +88,10 @@
       "limit": "20 KB"
     }
   ],
+  "peerDependencies": {
+    "react": ">=16",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+  },
   "devDependencies": {
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/commit-analyzer": "^8.0.1",

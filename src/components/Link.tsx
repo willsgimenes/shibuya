@@ -7,7 +7,9 @@ const StyledLink = styled.a.attrs(({ inverted }: { inverted: string }) => ({
   className: `flex items-center ${
     inverted ? 'text-white' : 'text-gray-600 hover:text-blue-700'
   }`,
-}))<{ inverted: Inverted }>``;
+}))<{ inverted: Inverted }>`
+  ${({ inverted }) => (inverted ? '&:hover { color: #f6ae28 }' : '')}
+`;
 
 export interface LinkProps {
   children: ReactNode;

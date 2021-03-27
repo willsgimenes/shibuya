@@ -2,7 +2,7 @@
 
 exports[`Link should render inverted link correct 1`] = `
 <a
-  class="sc-bdfBwQ flex items-center text-white"
+  class="sc-bdfBwQ eMWdzB flex items-center text-white"
   href="https://google.com"
   target="_blank"
 >
@@ -26,7 +26,7 @@ exports[`Link should render inverted link correct 1`] = `
 
 exports[`Link should render link without crashin 1`] = `
 <a
-  class="sc-bdfBwQ flex items-center text-gray-600 hover:text-blue-700"
+  class="sc-bdfBwQ gjsWpT flex items-center text-gray-600 hover:text-blue-700"
   href="https://google.com"
   target="_blank"
 >
