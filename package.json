@@ -67,11 +67,6 @@
       ]
     ]
   },
-  "peerDependencies": {
-    "react": ">=16",
-    "styled-components": "^5.2.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
