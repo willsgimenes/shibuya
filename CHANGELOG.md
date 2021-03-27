@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/willsgimenes/shibuya/compare/v1.1.0...v1.1.1) (2021-03-27)
+
+
+### Bug Fixes
+
+* **config-tailwind:** remove unused code from tailwind config ([#29](https://github.com/willsgimenes/shibuya/issues/29)) ([487b6db](https://github.com/willsgimenes/shibuya/commit/487b6dbf68ad59e3ea543ef92f7afed118a385c7))
+
 # [1.1.0](https://github.com/willsgimenes/shibuya/compare/v1.0.1...v1.1.0) (2021-03-26)
 
 
