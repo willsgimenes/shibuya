@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/willsgimenes/shibuya/compare/v1.1.3...v1.2.0) (2021-03-28)
+
+
+### Features
+
+* **button-component:** adds inverted variant ([#34](https://github.com/willsgimenes/shibuya/issues/34)) ([fa39224](https://github.com/willsgimenes/shibuya/commit/fa392243ce9872c700cd2270b46fc34167515bc9)), closes [#22](https://github.com/willsgimenes/shibuya/issues/22)
+
 ## [1.1.3](https://github.com/willsgimenes/shibuya/compare/v1.1.2...v1.1.3) (2021-03-28)
 
 
