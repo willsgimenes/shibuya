@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/willsgimenes/shibuya/compare/v1.1.2...v1.1.3) (2021-03-28)
+
+
+### Bug Fixes
+
+* **text-component:** fix h1 size ([#33](https://github.com/willsgimenes/shibuya/issues/33)) ([461f1d5](https://github.com/willsgimenes/shibuya/commit/461f1d5308dd92523bda9f0ab9279a47c90946b2))
+
 ## [1.1.2](https://github.com/willsgimenes/shibuya/compare/v1.1.1...v1.1.2) (2021-03-28)
 
 
