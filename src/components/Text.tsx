@@ -15,7 +15,7 @@ type TextVariants = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'p' | 'small';
 const getVariantStyle = (variant: string): string => {
   switch (variant) {
     case Variants.H1:
-      return 'text-4xl';
+      return 'text-5xl leading-normal';
 
     case Variants.H2:
       return 'text-3xl';
