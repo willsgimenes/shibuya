@@ -13,7 +13,14 @@ const meta: Meta = {
         }
     },
     parameters: {
-        controls: { expanded: true }
+        controls: { expanded: true },
+        backgrounds: {
+            default: 'twitter',
+            values: [
+                {name: 'default', value: '#ffffff'},
+                {name: 'dark-theme', value: '#333333'},
+            ],
+        },
     }
 }
 
@@ -32,3 +39,10 @@ TertitaryButton.args = { text: 'Button', variant: 'tertiary' }
 
 export const DisabledButton = Template.bind({});
 DisabledButton.args = { text: 'Button disabled', variant: 'primary', disabled: true }
+
+export const InvertedButton = Template.bind({})
+InvertedButton.args = { text: 'Inverted button', variant: 'inverted' }
+
+InvertedButton.parameters = {
+    backgrounds: { default: 'dark-theme' }
+}

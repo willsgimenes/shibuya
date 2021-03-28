@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should have correct inverted styled 1`] = `
+<button
+  class="sc-bdfBwQ px-8 py-2 rounded-lg bg-white text-black"
+>
+  Button Inverted
+</button>
+`;

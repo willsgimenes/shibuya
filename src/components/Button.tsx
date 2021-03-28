@@ -6,27 +6,31 @@ enum Variants {
   Primary = 'primary',
   Secondary = 'secondary',
   Tertiary = 'tertiary',
+  Inverted = 'inverted',
 }
 
-type ButtonVariants = 'primary' | 'secondary' | 'tertiary';
+type ButtonVariants = 'primary' | 'secondary' | 'tertiary' | 'inverted';
 
 const getVariantStyle = (variant: string): string => {
   switch (variant) {
     case Variants.Primary:
-      return 'bg-purple-800 hover:bg-purple-600';
+      return 'bg-purple-800 hover:bg-purple-600 text-white';
 
     case Variants.Secondary:
-      return 'bg-red-800 hover:bg-red-600';
+      return 'bg-red-800 hover:bg-red-600 text-white';
 
     case Variants.Tertiary:
-      return 'bg-gray-400';
+      return 'bg-gray-400 text-white';
+
+    case Variants.Inverted:
+      return 'bg-white text-black';
 
     default:
-      return 'bg-purple-800 hover:bg-purple-600';
+      return 'bg-purple-800 hover:bg-purple-600 text-white';
   }
 };
 
-const BASE_STYLE = 'px-8 py-2 rounded-lg text-white';
+const BASE_STYLE = 'px-8 py-2 rounded-lg';
 
 const DISABLED_STYLED = 'bg-gray-100 text-gray-500';
 

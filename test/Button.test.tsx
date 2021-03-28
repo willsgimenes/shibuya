@@ -41,4 +41,14 @@ describe('Button', () => {
 
     expect(buttonElement).toBeDisabled();
   });
+
+  it('should have correct inverted styled', () => {
+    const { getByRole } = render(
+      <Button text="Button Inverted" variant="inverted" />
+    );
+
+    const buttonElement = getByRole('button', { name: 'Button Inverted' });
+    expect(buttonElement).toHaveClass('bg-white text-black');
+    expect(buttonElement).toMatchSnapshot();
+  });
 });
